@@ -1,0 +1,4 @@
+grant codeBase "file:C:/Users/SeaSkyThe/Desktop/TPCD" {
+    permission java.net.SocketPermission "localhost:*", "connect,resolve";
+    permission java.security.AllPermission;
+};

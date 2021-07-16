@@ -1,0 +1,24 @@
+"C:\Users\SeaSkyThe\Documents\TAVA TUDO NO DESKTOP\Faculdade\PRIMEIRO SEMESTRE 4 ANO\Computação Distribuida\Conteudo 03 - Invocação Remove (RMI)\Exercicio\computeEngine";"C:\Users\SeaSkyThe\Documents\TAVA TUDO NO DESKTOP\Faculdade\PRIMEIRO SEMESTRE 4 ANO\Computação Distribuida\Conteudo 03 - Invocação Remove (RMI)\Exercicio\computeEngine\classes\compute.jar" -Djava.rmi.server.codebase=file:/"C:\Users\SeaSkyThe\Documents\TAVA TUDO NO DESKTOP\Faculdade\PRIMEIRO SEMESTRE 4 ANO\Computação Distribuida\Conteudo 03 - Invocação Remove (RMI)\Exercicio\computeEngine\classes\compute.jar" Djava.rmi.server.hostname=localhost -Djava.security.policy=server-win.policy engine.ComputeEngine localhost 1099
+
+
+
+
+- COMPILAR APLICACOES
+
+javac -cp ./classes/compute.jar client/ComputeSort.java client/Sort.java
+javac -cp ./classes/compute.jar client/ComputeMagicSquare.java client/MagicSquare.java
+
+- EXECUTAR O RMI REGISTRY
+
+set CLASSPATH=C:\Users\SeaSkyThe\Desktop\TPCD
+rmiregistry
+
+
+- EM UMA JANELA - EXECUTAR SERVER COM O CMD
+
+java -cp C:\Users\SeaSkyThe\Desktop\TPCD;C:\Users\SeaSkyThe\Desktop\TPCD\classes\compute.jar -Djava.rmi.server.codebase=file:/C:/Users/SeaSkyThe/Desktop/TPCD/classes/compute.jar -Djava.rmi.server.hostname=localhost -Djava.security.policy=server.policy engine.ComputeEngine localhost 1099
+
+
+- EM OUTRA - EXECUTAR O CLIENT COM O CMD (TROCANDO A APLICACAO)
+
+java -cp C:\Users\SeaSkyThe\Desktop\TPCD;C:\Users\SeaSkyThe\Desktop\TPCD\classes\compute.jar -Djava.rmi.server.codebase=file:/C:/Users/SeaSkyThe/Desktop/TPCD/classes/ -Djava.security.policy=client.policy client.ComputePi localhost 1099
