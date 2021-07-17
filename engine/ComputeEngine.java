@@ -14,6 +14,7 @@ public class ComputeEngine implements Compute {
     }
 
     public <T> T executeTask(Task<T> t) {
+        System.out.println("\nRecebida solicitacao do client, para executar um servico do objeto: " + t);
         return t.execute();
     }
 
