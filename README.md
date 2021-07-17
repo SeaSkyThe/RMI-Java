@@ -23,4 +23,4 @@
 
 - IN A NEW WINDOW EXECUTE THE CLIENT:
 
-java -cp disk:\project_folder;disk:\project_folder\classes\compute.jar -Djava.rmi.server.codebase=file:/disk:/TPCD/classes/ -Djava.security.policy=client.policy client.ComputePi localhost 1099
+java -cp disk:\project_folder;disk:\project_folder\classes\compute.jar -Djava.rmi.server.codebase=file:/disk:/classes/ -Djava.security.policy=client.policy client.ComputePi localhost 1099
