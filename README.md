@@ -38,11 +38,11 @@
         - <sorting_algorithm>: {'bubblesort', 'selectionsort', 'insertionsort'}
         - Example: java client/TCPClient.java bubblesort 54 23 12 6 43 2 4
   
-      - 'fibonacci' service has the arguments: <n>
-        - <n>: Fibonacci's number that you want
+      - 'fibonacci' service has the arguments: 'n'
+        - 'n': Fibonacci's number that you want
         - Example: java client/TCPClient.java fibonacci 5
   
-      - 'magicsquare' service has the arguments: <n>
-        - <n>: Dimension of the n x n Magic Square
+      - 'magicsquare' service has the arguments: 'n'
+        - 'n': Dimension of the n x n Magic Square
         - Example: java client/TCPClient.java magicsquare 5
         
