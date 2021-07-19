@@ -31,7 +31,7 @@
 
 - IN A NEW WINDOW EXECUTE THE CLIENT:
 
-  - java client/TCPClient.java <service_name> <arguments>
+  - java client/TCPClient.java <service_name><arguments>
   
     - <service_name>: {'sort', 'fibonacci', 'magicsquare'}
       - 'sort' service has the arguments: <sorting_algorithm> <list_of_numbers>
