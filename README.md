@@ -15,7 +15,8 @@
    
 - EXECUTE RMI REGISTRY IN A SEPARATED CMD WINDOW
 
-  - set CLASSPATH=disk:\project_folder (My case: set CLASSPATH=C:\Users\SeaSkyThe\Desktop\TPCD)s
+  - set CLASSPATH=disk:\project_folder 
+  - My case: set CLASSPATH=C:\Users\SeaSkyThe\Desktop\TPCD
   - rmiregistry
 
 - IN A NEW WINDOW EXECUTE THE EXECUTOR:
