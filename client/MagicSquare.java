@@ -20,6 +20,7 @@ public class MagicSquare implements Task<Vector<Vector<Integer>>>, Serializable 
         return computeMagicSquare(n);
     }
 
+
     public Vector<Vector<Integer>> odd(int n){
         Vector<Vector<Integer>> magic_square = new Vector<Vector<Integer>>(n);
         //inicializando o magic_square com 0 em todas as posicoes
@@ -71,7 +72,7 @@ public class MagicSquare implements Task<Vector<Vector<Integer>>>, Serializable 
                 i--;
             }
         }
-        System.out.println("\nEnviando resposta ao cliente...\n");
+        System.out.println("\nEnviando resposta da solicitacao ao servidor...\n");
         return magic_square;
     }
 
@@ -171,7 +172,7 @@ public class MagicSquare implements Task<Vector<Vector<Integer>>>, Serializable 
                 magic_square.add(i, linha_temp);
             }
         }
-        System.out.println("\nEnviando resposta ao cliente...\n");
+        System.out.println("\nEnviando resposta da solicitacao ao servidor...\n");
         return magic_square;
     }
 

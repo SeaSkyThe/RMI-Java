@@ -14,7 +14,7 @@ public class ComputeEngine implements Compute {
     }
 
     public <T> T executeTask(Task<T> t) {
-        System.out.println("\nRecebida solicitacao do client, para executar um servico do objeto: " + t);
+        System.out.println("\nRecebida solicitacao do servidor, para executar um servico do objeto: " + t);
         return t.execute();
     }
 
@@ -25,13 +25,13 @@ public class ComputeEngine implements Compute {
         try {
             String name = "Compute";
             Compute engine = new ComputeEngine();
-            Compute stub =
-                (Compute) UnicastRemoteObject.exportObject(engine, 0);
-            Registry registry = LocateRegistry.getRegistry(args[0],Integer.parseInt(args[1]));
+            Compute stub = (Compute) UnicastRemoteObject.exportObject(engine, 0);
+            Registry registry = LocateRegistry.getRegistry("localhost", 1099); //localhost 1099
             registry.rebind(name, stub);
             System.out.println("ComputeEngine bound");
         } catch (Exception e) {
             System.err.println("ComputeEngine exception:");
+            System.out.println("Porta: " + args[0]);
             e.printStackTrace();
         }
     }

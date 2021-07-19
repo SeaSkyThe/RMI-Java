@@ -31,7 +31,7 @@ public class Fibonacci implements Task<Integer>, Serializable {
             f_numbers[i] = f_numbers[i - 1] + f_numbers[i - 2];
         }
 
-        System.out.println("\nEnviando resposta da solicitacao ao cliente... ");
+        System.out.println("\nEnviando resposta da solicitaçao ao servidor... ");
         return f_numbers[n];
     }
  
